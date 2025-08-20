@@ -5,57 +5,65 @@
  * animations in the future you only have to modify this file.
  */
 
+/* Переменные отступов */
+:root {
+  --header-gap: 64px; /* увеличивайте это значение для большего пространства */
+}
+
+/* Отступ геро-секции */
+.section-hero {
+  margin-top: var(--header-gap);
+}
+
+/* Общие стили */
 body {
   font-family: 'Inter', sans-serif;
   background: #f9fafc;
   color: #1f2937;
 }
 
-h1, h2, h3 {
+h1,h2,h3 {
   font-family: 'Playfair Display', serif;
 }
 
-/* Primary call‑to‑action button used for CV download and LinkedIn links */
+/* Кнопки */
 .fin-btn {
-  background: linear-gradient(90deg, #1e3a8a, #1e40af);
-  color: #fff;
-  font-weight: 600;
-  border-radius: 0.75rem;
-  padding: 0.75rem 1.75rem;
-  letter-spacing: 0.02em;
-  box-shadow: 0 3px 10px rgba(30, 58, 138, 0.15);
-  transition: all 0.2s ease-in-out;
+  background: linear-gradient(90deg,#1e3a8a,#1e40af);
+  color:#fff;
+  font-weight:600;
+  border-radius:0.75rem;
+  padding:0.75rem 1.75rem;
+  letter-spacing:0.02em;
+  box-shadow:0 3px 10px rgba(30,58,138,0.15);
+  transition:all 0.2s ease-in-out;
 }
-
 .fin-btn:hover {
-  background: linear-gradient(90deg, #1e40af, #1e3a8a);
-  box-shadow: 0 6px 18px rgba(30, 58, 138, 0.25);
+  background: linear-gradient(90deg,#1e40af,#1e3a8a);
+  box-shadow:0 6px 18px rgba(30,58,138,0.25);
 }
 
-/* Card component used in the Expertise section */
+/* Карточки */
 .fin-card {
-  background: #fff;
-  border-radius: 1rem;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 4px 16px rgba(17, 24, 39, 0.06);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background:#fff;
+  border-radius:1rem;
+  border:1px solid #e5e7eb;
+  box-shadow:0 4px 16px rgba(17,24,39,0.06);
+  transition:transform 0.2s ease,box-shadow 0.2s ease;
 }
-
 .fin-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.1);
+  transform:translateY(-4px);
+  box-shadow:0 8px 24px rgba(17,24,39,0.1);
 }
 
-/* Simple fade‑in animation applied to sections as they load */
+/* Анимация fade-in */
 .fade-in {
-  opacity: 0;
-  transform: translateY(10px);
-  animation: fadeIn 0.9s ease forwards;
+  opacity:0;
+  transform:translateY(10px);
+  animation:fadeIn 0.9s ease forwards;
 }
-
 @keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  to{
+    opacity:1;
+    transform:translateY(0);
   }
 }
