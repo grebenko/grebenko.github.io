@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <!-- Tailwind по CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Шрифты Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Общие стили -->
+  <link rel="stylesheet" href="/assets/style.css">
+  <!-- Фавиконки -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/favicon-180.png">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <meta name="theme-color" content="#1e3a8a">
+</head>
+<body class="antialiased">
+  <!-- Переключатель языка -->
+  <div class="flex justify-end pt-6 pr-8 max-w-7xl mx-auto">
+    {% include lang-switcher.html %}
+  </div>
+
+  <!-- Hero -->
+  {% include hero.html %}
+
+  <!-- Обо мне -->
+  {% include about.html %}
+
+  <!-- Экспертиза -->
+  {% include expertise.html %}
+
+  <!-- Контакты -->
+  {% include contact.html %}
+
+  <!-- Футер -->
+  {% include footer.html %}
+</body>
+</html>
