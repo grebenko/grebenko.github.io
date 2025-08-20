@@ -50,26 +50,37 @@
     @keyframes fadeIn {
       to { opacity: 1; transform: translateY(0); }
     }
+    .lang-switcher button.active {
+      font-weight: 600;
+      color: #1d4ed8;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body class="antialiased">
 
+  <!-- Language Switcher -->
+  <div class="lang-switcher flex justify-end pt-6 pr-8 max-w-7xl mx-auto">
+    <button class="mr-3" data-lang="en">EN</button>
+    <button data-lang="ru">RU</button>
+  </div>
+
   <!-- Hero -->
   <section class="flex flex-col items-center justify-center min-h-[70vh] px-6 text-center bg-white fade-in">
-    <h1 class="text-3xl md:text-5xl font-bold text-[#1e3a8a] mb-3">Aleksandr Grebenko</h1>
-    <p class="text-lg md:text-xl text-[#1d4ed8] font-medium mb-6">Elegant Finance, Reliable Technology</p>
-    <h2 class="text-xl md:text-2xl text-gray-800 font-semibold mb-2">Business Systems Analyst | Fintech Solution Architect</h2>
-    <p class="text-lg md:text-xl text-gray-600 mb-8">Bridging Business Vision with Digital Precision</p>
+    <h1 id="heroName" class="text-3xl md:text-5xl font-bold text-[#1e3a8a] mb-3">Aleksandr Grebenko</h1>
+    <p id="tagline" class="text-lg md:text-xl text-[#1d4ed8] font-medium mb-6">Elegant Finance, Reliable Technology</p>
+    <h2 id="hero1" class="text-xl md:text-2xl text-gray-800 font-semibold mb-2">Business Systems Analyst | Fintech Solution Architect</h2>
+    <p id="hero2" class="text-lg md:text-xl text-gray-600 mb-8">Bridging Business Vision with Digital Precision</p>
     <div class="flex flex-wrap justify-center gap-4">
-      <a href="resume.pdf" download class="fin-btn">Download CV</a>
-      <a href="https://linkedin.com/in/grebenko" target="_blank" rel="noopener noreferrer" class="fin-btn bg-[#0077b5] hover:bg-[#005983]">LinkedIn</a>
+      <a id="downloadCV" href="resume.pdf" download class="fin-btn">Download CV</a>
+      <a id="linkedinBtn" href="https://linkedin.com/in/grebenko" target="_blank" rel="noopener noreferrer" class="fin-btn bg-[#0077b5] hover:bg-[#005983]">LinkedIn</a>
     </div>
   </section>
 
   <!-- About -->
   <section class="max-w-3xl mx-auto py-16 px-6 fade-in">
-    <h2 class="text-3xl font-bold text-center text-[#1e3a8a] mb-6">About Me</h2>
-    <p class="text-lg text-gray-700 leading-relaxed text-center">
+    <h2 id="aboutTitle" class="text-3xl font-bold text-center text-[#1e3a8a] mb-6">About Me</h2>
+    <p id="aboutText" class="text-lg text-gray-700 leading-relaxed text-center">
       I specialize in <strong>business systems analysis</strong>, <strong>product ownership</strong>, 
       and <strong>solution architecture</strong> for fintech and banking. 
       I translate complex business needs into robust, scalable digital solutions, 
@@ -80,11 +91,11 @@
 
   <!-- Expertise -->
   <section class="max-w-6xl mx-auto py-16 px-6 fade-in">
-    <h2 class="text-3xl font-bold text-center text-[#1e3a8a] mb-12">Expertise</h2>
+    <h2 id="rolesTitle" class="text-3xl font-bold text-center text-[#1e3a8a] mb-12">Expertise</h2>
     <div class="grid md:grid-cols-3 gap-8">
       <div class="fin-card p-6">
-        <h3 class="text-xl font-semibold text-[#1d4ed8] mb-4">Business Systems Analyst</h3>
-        <ul class="list-disc pl-5 text-gray-700 leading-relaxed">
+        <h3 id="bsaTitle" class="text-xl font-semibold text-[#1d4ed8] mb-4">Business Systems Analyst</h3>
+        <ul id="bsaItems" class="list-disc pl-5 text-gray-700 leading-relaxed">
           <li>Requirements elicitation & analysis</li>
           <li>BPMN/UML/ERD process modeling</li>
           <li>Fintech regulatory documentation</li>
@@ -92,8 +103,8 @@
         </ul>
       </div>
       <div class="fin-card p-6">
-        <h3 class="text-xl font-semibold text-[#1d4ed8] mb-4">Product Owner</h3>
-        <ul class="list-disc pl-5 text-gray-700 leading-relaxed">
+        <h3 id="poTitle" class="text-xl font-semibold text-[#1d4ed8] mb-4">Product Owner</h3>
+        <ul id="poItems" class="list-disc pl-5 text-gray-700 leading-relaxed">
           <li>Backlog & roadmap ownership</li>
           <li>Value-based prioritization</li>
           <li>Product vision for banking/fintech</li>
@@ -101,8 +112,8 @@
         </ul>
       </div>
       <div class="fin-card p-6">
-        <h3 class="text-xl font-semibold text-[#1d4ed8] mb-4">Solution Architect</h3>
-        <ul class="list-disc pl-5 text-gray-700 leading-relaxed">
+        <h3 id="saTitle" class="text-xl font-semibold text-[#1d4ed8] mb-4">Solution Architect</h3>
+        <ul id="saItems" class="list-disc pl-5 text-gray-700 leading-relaxed">
           <li>System/API integrations</li>
           <li>Scalable architecture design</li>
           <li>Security & compliance in finance</li>
@@ -114,14 +125,87 @@
 
   <!-- Contact -->
   <section class="max-w-3xl mx-auto py-16 px-6 text-center fade-in">
-    <h2 class="text-3xl font-bold text-[#1e3a8a] mb-6">Contact</h2>
-    <p class="text-lg text-gray-700 mb-2"><strong>Email:</strong> <a href="mailto:grebenko1999@gmail.com" class="text-[#1d4ed8] underline">grebenko1999@gmail.com</a></p>
-    <p class="text-lg text-gray-700"><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/grebenko" target="_blank" class="text-[#1d4ed8] underline">linkedin.com/in/grebenko</a></p>
+    <h2 id="contactTitle" class="text-3xl font-bold text-[#1e3a8a] mb-6">Contact</h2>
+    <p class="text-lg text-gray-700 mb-2"><strong id="emailLabel">Email:</strong> <a href="mailto:grebenko1999@gmail.com" class="text-[#1d4ed8] underline">grebenko1999@gmail.com</a></p>
+    <p class="text-lg text-gray-700"><strong id="linkedinLabel">LinkedIn:</strong> <a href="https://linkedin.com/in/grebenko" target="_blank" class="text-[#1d4ed8] underline">linkedin.com/in/grebenko</a></p>
   </section>
 
   <!-- Footer -->
   <footer class="py-6 text-center text-gray-500 text-sm">
-    © 2025 Aleksandr Grebenko
+    <span id="footer">© 2025 Aleksandr Grebenko</span>
   </footer>
+
+  <!-- Language Script -->
+  <script>
+    const dict = {
+      en: {
+        heroName: "Aleksandr Grebenko",
+        tagline: "Elegant Finance, Reliable Technology",
+        hero1: "Business Systems Analyst | Fintech Solution Architect",
+        hero2: "Bridging Business Vision with Digital Precision",
+        downloadCV: "Download CV",
+        linkedinBtn: "LinkedIn",
+        aboutTitle: "About Me",
+        aboutText: "I specialize in <strong>business systems analysis</strong>, <strong>product ownership</strong>, and <strong>solution architecture</strong> for fintech and banking. I translate complex business needs into robust, scalable digital solutions, aligning strategic goals with technical feasibility. My approach combines the discipline of classic finance with a modern product mindset.",
+        rolesTitle: "Expertise",
+        bsaTitle: "Business Systems Analyst",
+        bsaItems: "<li>Requirements elicitation & analysis</li><li>BPMN/UML/ERD process modeling</li><li>Fintech regulatory documentation</li><li>Stakeholder management</li>",
+        poTitle: "Product Owner",
+        poItems: "<li>Backlog & roadmap ownership</li><li>Value-based prioritization</li><li>Product vision for banking/fintech</li><li>Market & competitor analysis</li>",
+        saTitle: "Solution Architect",
+        saItems: "<li>System/API integrations</li><li>Scalable architecture design</li><li>Security & compliance in finance</li><li>Bridging business and engineering</li>",
+        contactTitle: "Contact",
+        emailLabel: "Email:",
+        linkedinLabel: "LinkedIn:",
+        footer: "© 2025 Aleksandr Grebenko"
+      },
+      ru: {
+        heroName: "Александр Гребенко",
+        tagline: "Элегантность финансов, надежность технологий",
+        hero1: "Бизнес-системный аналитик | Solution Architect в финтехе",
+        hero2: "Связываю бизнес-видение с цифровой точностью",
+        downloadCV: "Скачать резюме",
+        linkedinBtn: "LinkedIn",
+        aboutTitle: "Обо мне",
+        aboutText: "Профессионал в <strong>бизнес-анализе</strong>, <strong>Solution Architecture</strong> и <strong>Product Ownership</strong> для финтеха и банков. Преобразую сложные бизнес-требования в современные цифровые решения, соединяя стратегические цели с технической реализуемостью. Мой подход сочетает классику финансов и современное продуктовое мышление.",
+        rolesTitle: "Экспертиза",
+        bsaTitle: "Бизнес-системный аналитик",
+        bsaItems: "<li>Выявление и анализ требований</li><li>Моделирование процессов (BPMN/UML/ERD)</li><li>Документация для финтех/банков</li><li>Работа со стейкхолдерами</li>",
+        poTitle: "Product Owner",
+        poItems: "<li>Ведение бэклога и дорожной карты</li><li>Приоритизация по ценности</li><li>Видение финтех/банковских продуктов</li><li>Анализ рынка и конкурентов</li>",
+        saTitle: "Solution Architect",
+        saItems: "<li>Интеграция систем и API</li><li>Дизайн масштабируемой архитектуры</li><li>Безопасность и комплаенс</li><li>Связующее звено между бизнесом и IT</li>",
+        contactTitle: "Контакты",
+        emailLabel: "Почта:",
+        linkedinLabel: "LinkedIn:",
+        footer: "© 2025 Александр Гребенко"
+      }
+    };
+
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+      const t = dict[lang];
+      for (const key in t) {
+        const el = document.getElementById(key);
+        if (el) {
+          if (el.tagName === "UL" || el.tagName === "P") {
+            el.innerHTML = t[key];
+          } else {
+            el.innerText = t[key];
+          }
+        }
+      }
+      document.querySelectorAll('.lang-switcher button').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      setLang('en');
+      document.querySelectorAll('.lang-switcher button').forEach(btn => {
+        btn.onclick = () => setLang(btn.dataset.lang);
+      });
+    });
+  </script>
 </body>
 </html>
