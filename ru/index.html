@@ -6,7 +6,15 @@
   <title>Александр Гребенко — Бизнес-системный аналитик</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>/* те же стили, что и в EN */</style>
+  <style>    body { font-family: 'Inter', sans-serif; background: #f9fafc; color: #1f2937; }
+    h1,h2,h3 { font-family: 'Playfair Display', serif; }
+    .fin-btn { background: linear-gradient(90deg,#1e3a8a,#1e40af); color:#fff; font-weight:600; border-radius:0.75rem; padding:0.75rem 1.75rem; letter-spacing:0.02em; box-shadow:0 3px 10px rgba(30,58,138,0.15); transition:all 0.2s ease-in-out;}
+    .fin-btn:hover { background: linear-gradient(90deg,#1e40af,#1e3a8a); box-shadow:0 6px 18px rgba(30,58,138,0.25);}
+    .fin-card { background:#fff; border-radius:1rem; border:1px solid #e5e7eb; box-shadow:0 4px 16px rgba(17,24,39,0.06); transition:transform 0.2s ease,box-shadow 0.2s ease;}
+    .fin-card:hover { transform:translateY(-4px); box-shadow:0 8px 24px rgba(17,24,39,0.1);}
+    .fade-in { opacity:0; transform:translateY(10px); animation:fadeIn 0.9s ease forwards;}
+    @keyframes fadeIn {to{opacity:1; transform:translateY(0);}}
+  </style>
 </head>
 <body class="antialiased">
 
