@@ -1,0 +1,48 @@
+{
+  "langCode": "en",
+  "name": "Aleksandr Grebenko",
+  "subtitle": "Elegant Finance, Reliable Technology",
+  "roles": "Business Systems Analyst | Fintech Solution Architect",
+  "tagline": "Bridging Business Vision with Digital Precision",
+  "aboutTitle": "About Me",
+  "aboutText": "I specialize in <strong>business systems analysis</strong>, <strong>product ownership</strong>, and <strong>solution architecture</strong> for fintech and banking. I translate complex business needs into robust, scalable digital solutions, aligning strategic goals with technical feasibility. My approach combines the discipline of classic finance with a modern product mindset.",
+  "expertiseTitle": "Expertise",
+  "expertise": [
+    {
+      "title": "Business Systems Analyst",
+      "items": [
+        "Requirements elicitation & analysis",
+        "BPMN/UML/ERD process modeling",
+        "Fintech regulatory documentation",
+        "Stakeholder management"
+      ]
+    },
+    {
+      "title": "Product Owner",
+      "items": [
+        "Backlog & roadmap ownership",
+        "Value-based prioritization",
+        "Product vision for banking/fintech",
+        "Market & competitor analysis"
+      ]
+    },
+    {
+      "title": "Solution Architect",
+      "items": [
+        "System/API integrations",
+        "Scalable architecture design",
+        "Security & compliance in finance",
+        "Bridging business and engineering"
+      ]
+    }
+  ],
+  "contactTitle": "Contact",
+  "emailLabel": "Email:",
+  "email": "grebenko1999@gmail.com",
+  "linkedinLabel": "LinkedIn:",
+  "linkedin": "https://linkedin.com/in/grebenko",
+  "cv": "/assets/resume_en.pdf",
+  "downloadCV": "Download CV",
+  "linkedinButtonText": "LinkedIn",
+  "footer": "© 2025 Aleksandr Grebenko"
+}
