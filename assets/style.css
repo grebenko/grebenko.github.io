@@ -31,6 +31,10 @@ body {
   color: #1f2937;
 }
 
+.bg-cream {
+  background-color: rgba(247, 236, 222, 1);
+}
+
 h1,h2,h3 {
   font-family: 'Playfair Display', serif;
 }
