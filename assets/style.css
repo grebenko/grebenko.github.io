@@ -5,6 +5,15 @@
  * animations in the future you only have to modify this file.
  */
 
+.hero-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
 /* Переменные отступов */
 :root {
   --header-gap: 64px; /* увеличивайте это значение для большего пространства */
