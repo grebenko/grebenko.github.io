@@ -8,6 +8,12 @@ about:
     I specialize in **business systems analysis**, **product ownership**, and **solution architecture** for fintech and banking.
     I translate complex business needs into robust, scalable digital solutions, aligning strategic goals with technical feasibility.
     My approach combines the discipline of classic finance with a modern product mindset.
+skills:
+  title: "Skills"
+  items:
+    - "Business analysis"
+    - "API design"
+    - "Vibecoding"
 expertise_title: "Expertise"
 expertise:
   - title: "Business Systems Analyst"
